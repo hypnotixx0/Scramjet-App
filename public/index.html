@@ -1,68 +1,68 @@
-<!doctype html>
-<html>
-	<head>
-		<meta charset="utf-8" />
-		<meta
-			name="viewport"
-			content="width=device-width, initial-scale=1.0, shrink-to-fit=no"
-		/>
-		<title>Scramjet</title>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>/Purge - Scramjet Proxy</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🚀</text></svg>">
+</head>
+<body>
+    <div class="container">
+        <!-- Header -->
+        <header class="header">
+            <div class="logo">
+                <h1>/Purge</h1>
+                <span class="subtitle">Scramjet Proxy</span>
+            </div>
+        </header>
 
-		<link rel="shortcut icon" content="favicon.webp" />
+        <!-- Main Content -->
+        <main class="main">
+            <div class="hero">
+                <h2>Private Browsing</h2>
+                <p>Access the web securely with Scramjet proxy technology</p>
+            </div>
 
-		<link rel="stylesheet" href="index.css" />
-		<script src="/scram/scramjet.all.js"></script>
-		<script src="baremux/index.js" defer></script>
-		<script src="epoxy/index.js" defer></script>
-		<script src="register-sw.js" defer></script>
-		<script src="search.js" defer></script>
-		<script src="index.js" defer></script>
-	</head>
+            <!-- Search Box -->
+            <div class="search-container">
+                <div class="search-box">
+                    <input 
+                        type="text" 
+                        id="urlInput" 
+                        placeholder="Enter website URL or search terms..." 
+                        autocomplete="off"
+                    >
+                    <button id="goBtn">
+                        <span>Go</span>
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
+                            <path d="M10 17L15 12L10 7" stroke="currentColor" stroke-width="2"/>
+                        </svg>
+                    </button>
+                </div>
+            </div>
 
-	<body>
-		<div
-			title="Scramjet Logo"
-			class="flex-center logo-wrapper header-center"
-		>
-			<img class="logo" src="sj.png" alt="Scramjet" />
-			<h1>Scramjet | MW</h1>
-		</div>
-		<div class="flex-center desc left-margin">
-			<p>
-				Scramjet is an experimental interception based web proxy designed to evade internet censorship, 
-				bypass arbitrary web browser restrictions and innovate web proxy technologies.
-			</p>
-		</div>
+            <!-- Quick Links -->
+            <div class="quick-links">
+                <h3>Quick Access</h3>
+                <div class="links-grid">
+                    <button class="quick-link" data-url="https://google.com">Google</button>
+                    <button class="quick-link" data-url="https://youtube.com">YouTube</button>
+                    <button class="quick-link" data-url="https://github.com">GitHub</button>
+                    <button class="quick-link" data-url="https://discord.com">Discord</button>
+                </div>
+            </div>
+        </main>
 
-		<form id="sj-form" class="flex-center">
-			<input
-				id="sj-search-engine"
-				value="https://www.google.com/search?q=%s"
-				type="hidden"
-			/>
-			<input id="sj-address" type="text" placeholder="Search the web freely" />
-		</form>
-		<div class="desc left-margin">
-			<p id="sj-error"></p>
-			<pre id="sj-error-code"></pre>
-		</div>
-		<footer>
-			<div>
-				<a
-					title="The Mercury Workshop GitHub organization"
-					href="https://github.com/MercuryWorkshop"
-					>Mercury Workshop</a
-				>
-				<a
-					title="The example demo app for Scramjet"
-					href="https://github.com/MercuryWorkshop/Scramjet-Demo"
-					>GitHub</a
-				>
-				<a title="License information" href="credits.html">Credits</a>
-			</div>
-			<div>
-				<span>Scramjet &copy; MW 2025</span>
-			</div>
-		</footer>
-	</body>
+        <!-- Footer -->
+        <footer class="footer">
+            <p>&copy; 2025 /Purge. Powered by Scramjet.</p>
+            <p>Anyone posing as this site that isn't unhiin is false.</p>
+        </footer>
+    </div>
+
+    <!-- Load Scramjet's existing JS but add your interface logic -->
+    <script src="scramjet.js"></script>
+    <script src="app.js"></script>
+</body>
 </html>
